@@ -1,16 +1,24 @@
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.3rem;
 }
 
 .img-logo {
-  width: 100px;
+  width: 150px;
   height: auto;
+  margin-left: 0.8rem;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #000;
 }
 
 @media (max-width: 20em) {
