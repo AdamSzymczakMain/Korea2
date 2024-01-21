@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-logo {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 20em) {
+}
