@@ -52,6 +52,9 @@ h1 {
     margin: 0;
     padding-top: 0.3em;
     padding-left: 0.3em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
   }
 
   .icon {
@@ -70,41 +73,14 @@ h1 {
     margin: 0;
   }
 
-  /* Styl dla przycisku rozwijającego listę */
-  .dropdown-btn {
-    background-color: #3498db;
-    color: #fff;
+  .dropdown-list {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 1rem;
+    margin-left: 0.6rem;
+    margin-right: 1rem;
+
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-
-  /* Styl dla listy rozwijanej (domyślnie ukrytej) */
-  .dropdown-content {
-    display: none;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Styl dla elementów listy */
-  .dropdown-content li {
-    padding: 10px;
-  }
-
-  /* Styl dla elementów listy po najechaniu myszką */
-  .dropdown-content li:hover {
-    background-color: #ddd;
-  }
-
-  /* Pokazywanie listy po najechaniu na przycisk */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Ukrywanie listy po opuszczeniu przycisku */
-  .dropdown:hover .dropdown-content {
-    display: none;
+    background-color: transparent;
   }
 }

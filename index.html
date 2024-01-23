@@ -48,18 +48,50 @@
           <div class="where box">
             <p>Gdzie</p>
             <ion-icon class="icon" name="pin-outline"></ion-icon>
+            <select class="dropdown-list">
+              <option value="wartosc1">Kora</option>
+              <option value="wartosc2">Japonia</option>
+              <option value="wartosc3">Filipny</option>
+            </select>
           </div>
           <div class="check-in box">
             <p>Od kiedy:</p>
             <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+
+            <input
+              type="date"
+              class="dropdown-list date-list"
+              name="date-choice"
+              min="2024-01-01"
+              max="2024-12-31"
+            />
           </div>
           <div class="check-out box">
             <p>Do kiedy:</p>
             <ion-icon class="icon" name="calendar-number-outline"></ion-icon>
+            <label for="date-choice"></label>
+            <input
+              type="date"
+              class="dropdown-list date-list"
+              name="date-choice"
+              min="2024-01-01"
+              max="2024-12-31"
+            />
           </div>
           <div class="person box">
             <p>Osoby</p>
             <ion-icon class="icon" name="people-outline"></ion-icon>
+            <select class="dropdown-list">
+              <option value="wartosc1">1 osoba</option>
+              <option value="wartosc2">2 osoby</option>
+              <option value="wartosc3">3 osoby</option>
+              <option value="wartosc3">4 osoby</option>
+              <option value="wartosc3">5 osoby</option>
+              <option value="wartosc3">6 osoby</option>
+              <option value="wartosc3">7 osoby</option>
+              <option value="wartosc3">8 osoby</option>
+              <option value="wartosc3">9 osoby</option>
+            </select>
           </div>
           <div class="search box box-flex">
             <ion-icon class="icon" name="search-outline"></ion-icon>
