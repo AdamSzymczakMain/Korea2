@@ -201,6 +201,9 @@
 }
 
 @media (min-width: 2000px) {
+  .header {
+    max-width: 70%;
+  }
   .img-logo {
     width: 400px;
     height: auto;
