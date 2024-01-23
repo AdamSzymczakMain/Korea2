@@ -21,3 +21,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 2000px) {
+  .section-one {
+    max-width: 2000px;
+    margin: auto;
+  }
+}
