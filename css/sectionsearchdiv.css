@@ -113,5 +113,22 @@ h1 {
   }
 
   @media (min-width: 1200px) {
+    h1 {
+      font-size: 11em;
+      padding: 0.8em;
+    }
+
+    .box {
+      width: 180px;
+      height: 85px;
+    }
+
+    .icon {
+      font-size: 1em;
+    }
+
+    .dropdown-list {
+      font-size: 1em;
+    }
   }
 }
