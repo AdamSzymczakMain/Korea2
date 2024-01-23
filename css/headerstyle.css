@@ -201,11 +201,6 @@
 }
 
 @media (min-width: 2000px) {
-  .header {
-    background-image: url(../image/Korea.img1.png);
-    background-size: 100%;
-  }
-
   .img-logo {
     width: 400px;
     height: auto;
