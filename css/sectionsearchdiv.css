@@ -3,3 +3,108 @@ h1 {
   padding: 1em;
   font-size: 5.6em;
 }
+
+.section-search {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+@media (min-width: 425px) {
+  h1 {
+    font-size: 6.4em;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 7.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-row: 2fr;
+    font-size: 2em;
+    background-color: #ffffff96;
+
+    width: 150px;
+    height: 80px;
+  }
+
+  .box p {
+    align-self: start;
+    justify-self: start;
+    margin: 0;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+  }
+
+  .icon {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 0.3em;
+  }
+
+  .box-flex {
+    display: flex;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Styl dla przycisku rozwijającego listę */
+  .dropdown-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Styl dla listy rozwijanej (domyślnie ukrytej) */
+  .dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Styl dla elementów listy */
+  .dropdown-content li {
+    padding: 10px;
+  }
+
+  /* Styl dla elementów listy po najechaniu myszką */
+  .dropdown-content li:hover {
+    background-color: #ddd;
+  }
+
+  /* Pokazywanie listy po najechaniu na przycisk */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Ukrywanie listy po opuszczeniu przycisku */
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+}
