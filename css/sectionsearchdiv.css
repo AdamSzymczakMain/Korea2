@@ -131,4 +131,17 @@ h1 {
       font-size: 1em;
     }
   }
+
+  @media (min-width: 1600px) {
+    .box {
+      width: 200px;
+      height: 90px;
+    }
+
+    .icon {
+      margin-top: 0.3rem;
+    }
+  }
+
+  @media (min-width: 2000px);
 }
