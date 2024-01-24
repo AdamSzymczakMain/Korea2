@@ -1,0 +1,13 @@
+.header-main-text {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.p-header-main {
+  display: flex;
+  text-align: center;
+
+  font-size: 1.5em;
+  margin: 1em;
+}
