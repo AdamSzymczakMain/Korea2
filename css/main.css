@@ -152,8 +152,100 @@
 
 @media (min-width: 1024px) {
   .trip-main {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .trip-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .text-kioto {
+    order: 0;
+  }
+
+  .image-kioto {
+    order: 1;
+  }
+
+  .trip-jeju {
+    display: flex;
+  }
+
+  .text-DMZ {
+    order: 1;
+  }
+  .image-DMZ {
+    order: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-main-text {
+    font-size: 4em;
+  }
+
+  .p-header-main {
+    font-size: 2.4em;
+  }
+
+  .trip-main {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .header-trip-content {
+    font-size: 2.2em;
+  }
+
+  .text-trip-content {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header-main-text {
+    font-size: 5em;
+  }
+
+  .p-header-main {
+    font-size: 2.8em;
+  }
+
+  .trip-main {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  .header-main {
+    width: 1500px;
+  }
+  .trip-main {
+    width: 80%;
+    margin: auto;
+  }
+
+  .header-main-text {
+    font-size: 6em;
+  }
+
+  .p-header-main {
+    font-size: 3.1em;
+  }
+  .header-trip-content {
+    font-size: 3em;
+  }
+
+  .text-trip-content {
+    font-size: 2.3em;
   }
 }
