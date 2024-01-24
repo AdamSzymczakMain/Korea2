@@ -12,6 +12,10 @@
   margin: 1em;
 }
 
+.trip {
+  text-align: center;
+}
+
 .image-trip {
   width: 300px;
   margin: 0.3rem;
@@ -29,12 +33,10 @@
 
 .header-trip-content {
   font-size: 1.5em;
-  text-align: center;
 }
 
 .text-trip-content {
   font-size: 1.2em;
-  text-align: center;
 
-  margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.2rem 0.7rem 0.5rem 0.7rem;
 }
