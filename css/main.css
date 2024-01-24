@@ -114,7 +114,9 @@
   }
 
   .trip {
-    margin-bottom: 1.6em;
+    margin: 1.7em;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.126);
   }
 
   .border {
