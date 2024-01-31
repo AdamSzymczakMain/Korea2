@@ -26,7 +26,7 @@ footer {
 }
 
 .copyright {
-  order: 0;
+  order: 2;
   text-align: center;
 }
 
@@ -54,6 +54,18 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+  }
+  .copyright {
+    order: 0;
+    text-align: center;
+  }
+  .social-media {
+    order: 2;
+    text-align: center;
+  }
+  .footer-menu {
+    order: 1;
+    text-align: center;
   }
 }
 @media (min-width: 1025px) {
