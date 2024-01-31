@@ -1,3 +1,9 @@
+.icon-footer, .footer__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
 footer {
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
@@ -19,10 +25,7 @@ footer {
 }
 
 .footer__link {
-  text-decoration: none;
-  color: #000;
   font-size: 1.5em;
-  font-weight: 600;
 }
 
 .copyright {
@@ -45,7 +48,6 @@ footer {
 }
 
 .icon-footer {
-  color: #000;
   font-size: 1.5em;
 }
 

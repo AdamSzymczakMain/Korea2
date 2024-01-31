@@ -8,6 +8,12 @@ $gap-large: 2em;
 $margin-base: 0.5rem;
 $padding-base: 0.5em;
 
+%text-base {
+  text-decoration: none;
+  color: $color-text;
+  font-weight: 600;
+}
+
 footer {
   margin-top: $margin-base * 2.5;
   margin-bottom: $margin-base;
@@ -34,10 +40,8 @@ footer {
 }
 
 .footer__link {
-  text-decoration: none;
-  color: #000;
+  @extend %text-base;
   font-size: $font-size-base;
-  font-weight: 600;
 }
 
 .copyright {
@@ -60,7 +64,7 @@ footer {
 }
 
 .icon-footer {
-  color: #000;
+  @extend %text-base;
   font-size: $font-size-base;
 }
 
