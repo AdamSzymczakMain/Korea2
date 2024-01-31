@@ -7,7 +7,12 @@ footer {
   gap: 0.5em;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../image/Korea.img1.png);
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../image/Korea.img1.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,6 +60,7 @@ footer {
     justify-content: space-between;
     align-items: start;
   }
+
   .copyright {
     order: 0;
     margin-top: 0.5rem;
@@ -66,6 +72,7 @@ footer {
     margin-right: 0.3rem;
   }
 }
+
 @media (min-width: 1025px) {
   .copyright {
     font-size: 1.5em;
@@ -77,6 +84,7 @@ footer {
     font-size: 1.5em;
   }
 }
+
 @media (min-width: 1440px) {
   footer {
     width: 80%;

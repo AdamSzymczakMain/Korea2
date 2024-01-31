@@ -1,9 +1,9 @@
 .header-main {
   text-align: center;
 }
-
 .header-main-text {
   font-size: 2em;
+
   margin-bottom: 1.2rem;
 }
 
@@ -37,6 +37,7 @@
 
 .text-trip-content {
   font-size: 1.2em;
+
   margin: 0.2rem 0.7rem 0.5rem 0.7rem;
 }
 
@@ -44,72 +45,90 @@
   .image-trip {
     width: 350px;
   }
+
   .header-trip-content {
     font-size: 1.7em;
   }
+
   .text-trip-content {
     font-size: 1.4em;
+
     margin: 0.2rem 0.9rem 0.5rem 0.9rem;
   }
 }
+
 @media (min-width: 425px) {
   .header-main {
     width: 450px;
     margin: auto;
   }
+
   .trip-main {
     width: 450px;
     margin: auto;
   }
 }
+
 @media (min-width: 650px) {
   .trip-main {
     width: 650px;
     margin: auto;
   }
+
   .trip {
     display: flex;
   }
   .image-trip {
     flex: 1;
+
     object-fit: cover;
   }
   .trip-content {
     flex: 1;
   }
+
   .text-DMZ {
     order: 0;
   }
   .image-DMZ {
     order: 1;
   }
+
   .image-Palawan {
     order: 1;
   }
+
   .text-Palawan {
     order: 0;
   }
+
   .Palawan,
   .kioto {
     flex: 1;
   }
 }
+
 @media (min-width: 768px) {
   .header-main-text {
     font-size: 3em;
   }
+
   .p-header-main {
     font-size: 1.9em;
     margin-bottom: 0.8em;
   }
+
   .trip {
     margin: 1.7em;
+
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.126);
   }
+
   .border {
     margin-bottom: 0.8rem;
   }
 }
+
 @media (min-width: 900px) {
   .header-main-text {
     font-size: 4em;
@@ -118,25 +137,31 @@
     width: 750px;
     margin: auto;
   }
+
   .p-header-main {
     font-size: 2.3em;
     margin-bottom: 1.4em;
   }
+
   .trip-main {
     width: 800px;
     margin: auto;
   }
+
   .header-trip-content {
     font-size: 1.9em;
   }
+
   .text-trip-content {
     font-size: 1.7em;
   }
 }
+
 @media (min-width: 1024px) {
   .border {
     display: none;
   }
+
   .trip-main {
     width: 1000px;
     margin: auto;
@@ -145,15 +170,19 @@
     grid-template-rows: 1fr 1fr;
     gap: 10px;
   }
+
   .text-kioto {
     order: 0;
   }
+
   .image-kioto {
     order: 1;
   }
+
   .trip-jeju {
     display: flex;
   }
+
   .text-DMZ {
     order: 1;
   }
@@ -161,36 +190,45 @@
     order: 0;
   }
 }
+
 @media (min-width: 1200px) {
   .header-main-text {
     font-size: 4em;
   }
+
   .p-header-main {
     font-size: 2.4em;
   }
+
   .trip-main {
     width: 1200px;
     margin: auto;
   }
+
   .header-trip-content {
     font-size: 2.2em;
   }
+
   .text-trip-content {
     font-size: 1.9em;
   }
 }
+
 @media (min-width: 1500px) {
   .header-main-text {
     font-size: 5em;
   }
+
   .p-header-main {
     font-size: 2.8em;
   }
+
   .trip-main {
     width: 80%;
     margin: auto;
   }
 }
+
 @media (min-width: 2000px) {
   .header-main {
     width: 1500px;
@@ -199,15 +237,18 @@
     width: 80%;
     margin: auto;
   }
+
   .header-main-text {
     font-size: 6em;
   }
+
   .p-header-main {
     font-size: 3.1em;
   }
   .header-trip-content {
     font-size: 3em;
   }
+
   .text-trip-content {
     font-size: 2.3em;
   }
