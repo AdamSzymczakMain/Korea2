@@ -1,255 +1,158 @@
+$border-color: #414141;
+$main-width: 1500px;
+$trip-main-width-large: 80%;
+$font-size-base: 1.2em; // Bazowa wielkość fontu
+$font-size-large: 2em;
+$font-size-x-large: 3em;
+$font-size-xx-large: 4em;
+$font-size-xxx-large: 5em;
+$font-size-xxxx-large: 6em;
+$margin-auto: auto;
+$image-trip-width-small: 300px;
+$image-trip-width-medium: 350px;
+$trip-main-width-medium: 450px;
+$trip-main-width-large: 650px;
+$trip-main-width-x-large: 800px;
+$trip-main-width-xx-large: 1000px;
+$trip-main-width-xxx-large: 1200px;
+
 .header-main {
   text-align: center;
-}
-.header-main-text {
-  font-size: 2em;
+  width: $main-width;
+  margin: $margin-auto;
 
-  margin-bottom: 1.2rem;
-}
+  &-text {
+    font-size: $font-size-large;
+    margin-bottom: 1.2rem;
+  }
 
-.p-header-main {
-  font-size: 1.5em;
-  margin: 1em;
+  .p-header-main {
+    font-size: 1.5em;
+    margin: 1em;
+  }
 }
 
 .trip {
   text-align: center;
-}
+  .image-trip {
+    width: $image-trip-width-small;
+    margin: 0.3rem;
+  }
 
-.image-trip {
-  width: 300px;
-  margin: 0.3rem;
+  &-content {
+    font-size: $font-size-base;
+    margin: 0.2rem 0.7rem 0.5rem;
+  }
 }
 
 .border {
-  border: 1px solid #414141;
+  border: 1px solid $border-color;
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem $margin-auto;
 }
 
-.header-trip-content {
-  font-size: 1.5em;
+$image-trip-width-small: 300px;
+$image-trip-width-medium: 350px;
+
+@mixin media-query($size) {
+  @media (min-width: $size) {
+    @content;
+  }
 }
 
-.text-trip-content {
-  font-size: 1.2em;
-
-  margin: 0.2rem 0.7rem 0.5rem 0.7rem;
-}
-
-@media (min-width: 375px) {
+@include media-query(375px) {
   .image-trip {
-    width: 350px;
-  }
-
-  .header-trip-content {
-    font-size: 1.7em;
-  }
-
-  .text-trip-content {
-    font-size: 1.4em;
-
-    margin: 0.2rem 0.9rem 0.5rem 0.9rem;
+    width: $image-trip-width-medium;
   }
 }
 
-@media (min-width: 425px) {
-  .header-main {
-    width: 450px;
-    margin: auto;
-  }
-
+@include media-query(425px) {
+  .header-main,
   .trip-main {
-    width: 450px;
-    margin: auto;
+    width: $trip-main-width-medium;
+    margin: $margin-auto;
   }
 }
 
-@media (min-width: 650px) {
+@include media-query(650px) {
   .trip-main {
-    width: 650px;
-    margin: auto;
+    width: $trip-main-width-large;
   }
-
   .trip {
     display: flex;
-  }
-  .image-trip {
-    flex: 1;
-
-    object-fit: cover;
-  }
-  .trip-content {
-    flex: 1;
-  }
-
-  .text-DMZ {
-    order: 0;
-  }
-  .image-DMZ {
-    order: 1;
-  }
-
-  .image-Palawan {
-    order: 1;
-  }
-
-  .text-Palawan {
-    order: 0;
-  }
-
-  .Palawan,
-  .kioto {
-    flex: 1;
+    .image-trip {
+      flex: 1;
+      object-fit: cover;
+    }
+    &-content {
+      flex: 1;
+    }
   }
 }
 
-@media (min-width: 768px) {
+@include media-query(768px) {
   .header-main-text {
-    font-size: 3em;
+    font-size: $font-size-x-large;
   }
-
   .p-header-main {
     font-size: 1.9em;
     margin-bottom: 0.8em;
   }
-
-  .trip {
-    margin: 1.7em;
-
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.126);
-  }
-
-  .border {
-    margin-bottom: 0.8rem;
-  }
 }
 
-@media (min-width: 900px) {
+@include media-query(900px) {
   .header-main-text {
-    font-size: 4em;
+    font-size: $font-size-xx-large;
   }
   .header-main {
-    width: 750px;
-    margin: auto;
-  }
-
-  .p-header-main {
-    font-size: 2.3em;
-    margin-bottom: 1.4em;
-  }
-
-  .trip-main {
-    width: 800px;
-    margin: auto;
-  }
-
-  .header-trip-content {
-    font-size: 1.9em;
-  }
-
-  .text-trip-content {
-    font-size: 1.7em;
+    width: $trip-main-width-x-large;
   }
 }
 
-@media (min-width: 1024px) {
+@include media-query(1024px) {
   .border {
     display: none;
   }
-
   .trip-main {
-    width: 1000px;
-    margin: auto;
+    width: $trip-main-width-xx-large;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
   }
-
-  .text-kioto {
-    order: 0;
-  }
-
-  .image-kioto {
-    order: 1;
-  }
-
-  .trip-jeju {
-    display: flex;
-  }
-
-  .text-DMZ {
-    order: 1;
-  }
-  .image-DMZ {
-    order: 0;
-  }
 }
 
-@media (min-width: 1200px) {
+@include media-query(1200px) {
   .header-main-text {
-    font-size: 4em;
+    font-size: $font-size-xxx-large;
   }
-
-  .p-header-main {
-    font-size: 2.4em;
-  }
-
   .trip-main {
-    width: 1200px;
-    margin: auto;
-  }
-
-  .header-trip-content {
-    font-size: 2.2em;
-  }
-
-  .text-trip-content {
-    font-size: 1.9em;
+    width: $trip-main-width-xxx-large;
   }
 }
 
-@media (min-width: 1500px) {
+@include media-query(1500px) {
   .header-main-text {
-    font-size: 5em;
+    font-size: $font-size-xxxx-large;
   }
-
-  .p-header-main {
-    font-size: 2.8em;
-  }
-
   .trip-main {
-    width: 80%;
-    margin: auto;
+    width: $trip-main-width-large;
   }
 }
 
-@media (min-width: 2000px) {
+@include media-query(2000px) {
   .header-main {
-    width: 1500px;
+    width: $main-width;
   }
   .trip-main {
-    width: 80%;
-    margin: auto;
+    width: $trip-main-width-large;
   }
+}
 
-  .header-main-text {
-    font-size: 6em;
-  }
-
-  .p-header-main {
-    font-size: 3.1em;
-  }
-  .header-trip-content {
-    font-size: 3em;
-  }
-
-  .text-trip-content {
-    font-size: 2.3em;
+// Definicja mixin media-query dla ułatwienia zarządzania breakpointami
+@mixin media-query($size) {
+  @media (min-width: $size) {
+    @content;
   }
 }

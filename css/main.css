@@ -1,13 +1,13 @@
 .header-main {
   text-align: center;
+  width: 1500px;
+  margin: auto;
 }
-
 .header-main-text {
   font-size: 2em;
   margin-bottom: 1.2rem;
 }
-
-.p-header-main {
+.header-main .p-header-main {
   font-size: 1.5em;
   margin: 1em;
 }
@@ -15,48 +15,29 @@
 .trip {
   text-align: center;
 }
-
-.image-trip {
+.trip .image-trip {
   width: 300px;
   margin: 0.3rem;
+}
+.trip-content {
+  font-size: 1.2em;
+  margin: 0.2rem 0.7rem 0.5rem;
 }
 
 .border {
   border: 1px solid #414141;
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.header-trip-content {
-  font-size: 1.5em;
-}
-
-.text-trip-content {
-  font-size: 1.2em;
-  margin: 0.2rem 0.7rem 0.5rem 0.7rem;
+  margin: 0.5rem auto;
 }
 
 @media (min-width: 375px) {
   .image-trip {
     width: 350px;
   }
-  .header-trip-content {
-    font-size: 1.7em;
-  }
-  .text-trip-content {
-    font-size: 1.4em;
-    margin: 0.2rem 0.9rem 0.5rem 0.9rem;
-  }
 }
 @media (min-width: 425px) {
-  .header-main {
-    width: 450px;
-    margin: auto;
-  }
+  .header-main,
   .trip-main {
     width: 450px;
     margin: auto;
@@ -65,32 +46,15 @@
 @media (min-width: 650px) {
   .trip-main {
     width: 650px;
-    margin: auto;
   }
   .trip {
     display: flex;
   }
-  .image-trip {
+  .trip .image-trip {
     flex: 1;
     object-fit: cover;
   }
   .trip-content {
-    flex: 1;
-  }
-  .text-DMZ {
-    order: 0;
-  }
-  .image-DMZ {
-    order: 1;
-  }
-  .image-Palawan {
-    order: 1;
-  }
-  .text-Palawan {
-    order: 0;
-  }
-  .Palawan,
-  .kioto {
     flex: 1;
   }
 }
@@ -102,35 +66,13 @@
     font-size: 1.9em;
     margin-bottom: 0.8em;
   }
-  .trip {
-    margin: 1.7em;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.126);
-  }
-  .border {
-    margin-bottom: 0.8rem;
-  }
 }
 @media (min-width: 900px) {
   .header-main-text {
     font-size: 4em;
   }
   .header-main {
-    width: 750px;
-    margin: auto;
-  }
-  .p-header-main {
-    font-size: 2.3em;
-    margin-bottom: 1.4em;
-  }
-  .trip-main {
     width: 800px;
-    margin: auto;
-  }
-  .header-trip-content {
-    font-size: 1.9em;
-  }
-  .text-trip-content {
-    font-size: 1.7em;
   }
 }
 @media (min-width: 1024px) {
@@ -139,56 +81,26 @@
   }
   .trip-main {
     width: 1000px;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
   }
-  .text-kioto {
-    order: 0;
-  }
-  .image-kioto {
-    order: 1;
-  }
-  .trip-jeju {
-    display: flex;
-  }
-  .text-DMZ {
-    order: 1;
-  }
-  .image-DMZ {
-    order: 0;
-  }
 }
 @media (min-width: 1200px) {
   .header-main-text {
-    font-size: 4em;
-  }
-  .p-header-main {
-    font-size: 2.4em;
+    font-size: 5em;
   }
   .trip-main {
     width: 1200px;
-    margin: auto;
-  }
-  .header-trip-content {
-    font-size: 2.2em;
-  }
-  .text-trip-content {
-    font-size: 1.9em;
   }
 }
 @media (min-width: 1500px) {
   .header-main-text {
-    font-size: 5em;
-  }
-  .p-header-main {
-    font-size: 2.8em;
+    font-size: 6em;
   }
   .trip-main {
-    width: 80%;
-    margin: auto;
+    width: 650px;
   }
 }
 @media (min-width: 2000px) {
@@ -196,19 +108,6 @@
     width: 1500px;
   }
   .trip-main {
-    width: 80%;
-    margin: auto;
-  }
-  .header-main-text {
-    font-size: 6em;
-  }
-  .p-header-main {
-    font-size: 3.1em;
-  }
-  .header-trip-content {
-    font-size: 3em;
-  }
-  .text-trip-content {
-    font-size: 2.3em;
+    width: 650px;
   }
 }
