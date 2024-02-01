@@ -1,27 +1,45 @@
-:root {
-  --color-primary: #e6735b; /* Delikatny pomarańczowo-czerwony */
-  --color-secondary: #003478; /* Niezmieniony niebieski */
-  --color-tertiary: #000000; /* Niezmieniony czarny */
+$color-primary: #e6735b;
+$color-secondary: #003478;
+$color-tertiary: #000000;
+$color-primary-darker: #cc5c4b;
+$color-secondary-darker: #00265b;
+$color-tertiary-darker: #333333;
+$color-primary-opacity: rgba($color-primary, 0.3);
+$color-secondary-opacity: rgba($color-secondary, 0.3);
+$color-tertiary-opacity: rgba($color-tertiary, 0.3);
+$gradient-primary: linear-gradient(
+  to top left,
+  $color-primary,
+  $color-secondary
+);
+$gradient-secondary: linear-gradient(
+  to top left,
+  $color-primary-darker,
+  $color-secondary-darker
+);
 
-  --color-primary-darker: #cc5c4b; /* Ciemniejszy delikatny pomarańczowo-czerwony */
-  --color-secondary-darker: #00265b; /* Niezmieniony ciemniejszy niebieski */
-  --color-tertiary-darker: #333333; /* Niezmieniony ciemny szary */
+$font-size-base: 1.5em;
+$font-size-large: 2em;
+$font-size-xlarge: 2.3em;
+$font-size-xxlarge: 3em;
+$gap-base: 0.5em;
+$gap-large: 2em;
+$margin-base: 1.25rem;
+$padding-base: 0.5em;
 
-  --color-primary-opacity: #e6735b3a; /* Przezroczysty delikatny pomarańczowo-czerwony */
-  --color-secondary-opacity: #0034783a; /* Niezmieniony przezroczysty niebieski */
-  --color-tertiary-opacity: #0000003a; /* Niezmieniony przezroczysty czarny */
+%text-link {
+  text-decoration: none;
+  color: $color-tertiary;
+  font-weight: 600;
+  font-size: $font-size-base;
 
-  --gradient-primary: linear-gradient(
-    to top left,
-    #e6735b,
-    #003478
-  ); /* Gradient z delikatnym pomarańczowo-czerwonym i niebieskim */
-  --gradient-secondary: linear-gradient(
-    to top left,
-    #cc5c4b,
-    #00265b
-  ); /* Gradient z ciemniejszym delikatnym pomarańczowo-czerwonym i ciemniejszym niebieskim */
+  &:hover {
+    background-color: $color-primary-darker;
+  }
 }
+
+$background-image: url(../image/Korea.img1.png);
+$background-gradient: $gradient-primary, $background-image;
 
 .header {
   display: flex;
@@ -29,7 +47,6 @@
   align-items: center;
   max-width: 1200px;
   padding: 0.3rem;
-
   position: relative;
 }
 
@@ -47,16 +64,12 @@
   width: 100%;
   height: 100vh;
   transform: translateX(100%);
-
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
-
   opacity: 0;
-
   pointer-events: none;
-
   visibility: hidden;
 
   &.nav-open {
@@ -66,10 +79,11 @@
     transform: translateX(0);
   }
 }
+
 .icon-mobile-nav {
   height: 2em;
   width: 2em;
-  color: #000;
+  color: $color-tertiary;
 
   &[name="close-outline"] {
     display: none;
@@ -83,31 +97,18 @@
     display: none;
   }
 }
+
 .main-nav-lists {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  gap: 2em;
-}
+  gap: $gap-large;
 
-.main-nav-link {
-  font-size: 1.5em;
-  font-weight: 500;
-  text-decoration: none;
-  color: #000;
-
-  &:link,
-  &:visited {
-    padding: 0.7em;
-    border-radius: 20px;
-    transition: all 0.7s;
-  }
-
-  &:hover,
-  &:active {
-    background-color: var(--color-primary-darker);
+  .main-nav-link {
+    @extend %text-link;
   }
 }
+
 .btn-mobile-nav {
   margin-right: 0.7em;
   border: none;
@@ -124,13 +125,14 @@
 
   .main-nav-link {
     display: flex;
-    font-size: 1.8em;
+    font-size: $font-size-large;
   }
 
   .btn-mobile-nav {
-    font-size: 2em;
+    font-size: $font-size-xlarge;
   }
 }
+
 @media (min-width: 425px) {
   .img-logo {
     width: 250px;
@@ -139,21 +141,19 @@
   }
 
   .main-nav-link {
-    font-size: 1.8em;
+    font-size: $font-size-large;
   }
 
   .btn-mobile-nav {
-    font-size: 2.5em;
+    font-size: $font-size-xxlarge;
   }
 }
 
 @media (min-width: 960px) {
-  /* Ukryj przycisk menu */
   .btn-mobile-nav {
     display: none;
   }
 
-  /* Pokaż nawigację */
   .main-nav {
     position: static;
     transform: translateX(0);
@@ -165,14 +165,13 @@
     background-color: transparent;
   }
 
-  .main-nav-link {
-    display: flex;
-    font-size: 2em;
-    font-weight: 600;
-  }
-
   .main-nav-lists {
     flex-direction: row;
+  }
+
+  .main-nav-link {
+    font-size: $font-size-xlarge;
+    font-weight: 600;
   }
 }
 
@@ -188,7 +187,7 @@
   }
 
   .main-nav-link {
-    font-size: 2.3em;
+    font-size: $font-size-xxlarge;
   }
 }
 
@@ -202,12 +201,13 @@
   .header {
     max-width: 70%;
   }
+
   .img-logo {
     width: 400px;
     height: auto;
   }
 
   .main-nav-link {
-    font-size: 3em;
+    font-size: $font-size-xxlarge;
   }
 }
