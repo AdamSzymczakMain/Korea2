@@ -55,17 +55,18 @@ $margin-auto: auto;
 $padding-base: 0.5em;
 
 $main-width: 1500px;
-$trip-main-width-large: 80%;
+$main-width-large: 80%;
 
 //
 
 $image-trip-width-small: 300px;
 $image-trip-width-medium: 350px;
-$trip-main-width-medium: 450px;
-$trip-main-width-large: 650px;
-$trip-main-width-x-large: 800px;
-$trip-main-width-xx-large: 1000px;
-$trip-main-width-xxx-large: 1200px;
+$width-medium: 450px;
+$width-large: 650px;
+$width-x-large: 800px;
+$width-xx-large: 1000px;
+$width-xxx-large: 1200px;
+$width-xxxx-large: 1400px;
 
 %text-base {
   text-decoration: none;

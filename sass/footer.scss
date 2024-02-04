@@ -70,10 +70,11 @@ footer {
     .social-media {
       font-size: $font-size-large;
     }
+    width: $width-xxx-large;
   }
 
   @media (min-width: 1440px) {
-    width: 80%;
+    width: $width-xxxx-large;
     margin: auto;
 
     .copyright,
