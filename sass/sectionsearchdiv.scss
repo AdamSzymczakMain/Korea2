@@ -91,7 +91,7 @@ h1 {
 
     &:hover,
     &:active {
-      background-color: var(--color-primary);
+      background-color: $color-primary;
       color: #fff;
     }
   }

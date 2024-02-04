@@ -76,7 +76,7 @@ h1 {
     transition: all 0.7s;
   }
   .button:hover, .button:active {
-    background-color: var(--color-primary);
+    background-color: #e6735b;
     color: #fff;
   }
   ul {

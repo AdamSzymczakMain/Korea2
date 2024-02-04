@@ -36,15 +36,6 @@
   margin: 0.5rem $margin-auto;
 }
 
-$image-trip-width-small: 300px;
-$image-trip-width-medium: 350px;
-
-@mixin media-query($size) {
-  @media (min-width: $size) {
-    @content;
-  }
-}
-
 @include media-query(375px) {
   .image-trip {
     width: $image-trip-width-medium;

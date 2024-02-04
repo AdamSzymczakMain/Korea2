@@ -3,9 +3,11 @@
   color: #000000;
   font-weight: 600;
   font-size: 1.5em;
+  padding: 0.5em;
+  border-radius: 30px;
 }
 .main-nav-lists .main-nav-link:hover {
-  background-color: #cc5c4b;
+  background-color: #e36045;
 }
 
 .main-nav-lists .main-nav-link {
@@ -15,7 +17,7 @@
   font-size: 1.5em;
 }
 .main-nav-lists .main-nav-link:hover {
-  background-color: #cc5c4b;
+  background-color: #e36045;
 }
 
 .header {

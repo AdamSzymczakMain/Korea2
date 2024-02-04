@@ -3,9 +3,6 @@
 $color-primary: #e6735b;
 $color-secondary: #003478;
 $color-tertiary: #000000;
-$color-primary-darker: #cc5c4b;
-$color-secondary-darker: #00265b;
-$color-tertiary-darker: #333333;
 $color-primary-opacity: rgba($color-primary, 0.3);
 $color-secondary-opacity: rgba($color-secondary, 0.3);
 $color-tertiary-opacity: rgba($color-tertiary, 0.3);
@@ -16,8 +13,7 @@ $gradient-primary: linear-gradient(
 );
 $gradient-secondary: linear-gradient(
   to top left,
-  $color-primary-darker,
-  $color-secondary-darker
+  darken($color-primary, 20%) darken($color-secondary, 20%)
 );
 
 $color-text: #000;
@@ -50,14 +46,24 @@ $gap-base: 0.5em;
 $gap-large: 2em;
 
 $margin-base: 1.25rem;
+$margin-medium: 1.5rem;
+$margin-large: 1.75rem;
+$margin-x-large: 2rem;
+$margin-xx-large: 2.25rem;
+$margin-xxx-large: 2.5rem;
+
 $margin-auto: auto;
 
 $padding-base: 0.5em;
+$padding-medium: 1em;
+$padding-large: 1.5em;
+$padding-x-large: 2em;
+$padding-xx-large: 2.5em;
 
 $main-width: 1500px;
 $main-width-large: 80%;
 
-//
+// width
 
 $image-trip-width-small: 300px;
 $image-trip-width-medium: 350px;
@@ -68,6 +74,12 @@ $width-xx-large: 1000px;
 $width-xxx-large: 1200px;
 $width-xxxx-large: 1400px;
 
+// border
+
+$box-shadow-left-down: 1px 2px 2px black;
+$border-radius-all-edge: 30px;
+
+// inheri
 %text-base {
   text-decoration: none;
   color: $color-text;
@@ -80,9 +92,11 @@ $width-xxxx-large: 1400px;
   color: $color-tertiary;
   font-weight: 600;
   font-size: $font-size-base;
+  padding: $padding-base;
+  border-radius: $border-radius-all-edge;
 
   &:hover {
-    background-color: $color-primary-darker;
+    background-color: darken($color-primary, 5%);
   }
 }
 
@@ -100,6 +114,14 @@ $width-xxxx-large: 1400px;
   font-size: $font-size-base;
 
   &:hover {
-    background-color: $color-primary-darker;
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+// mixin
+
+@mixin media-query($size) {
+  @media (min-width: $size) {
+    @content;
   }
 }
