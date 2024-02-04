@@ -14,7 +14,7 @@ footer {
   gap: 0.5em;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../image/Korea.img1.png);
+  background: linear-gradient(to top left, #e6735b, #003478), url(../image/Korea.img1.png), url(../image/Korea.img1.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;

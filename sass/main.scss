@@ -1,20 +1,4 @@
-$border-color: #414141;
-$main-width: 1500px;
-$trip-main-width-large: 80%;
-$font-size-base: 1.2em; // Bazowa wielkość fontu
-$font-size-large: 2em;
-$font-size-x-large: 3em;
-$font-size-xx-large: 4em;
-$font-size-xxx-large: 5em;
-$font-size-xxxx-large: 6em;
-$margin-auto: auto;
-$image-trip-width-small: 300px;
-$image-trip-width-medium: 350px;
-$trip-main-width-medium: 450px;
-$trip-main-width-large: 650px;
-$trip-main-width-x-large: 800px;
-$trip-main-width-xx-large: 1000px;
-$trip-main-width-xxx-large: 1200px;
+@import "variables";
 
 .header-main {
   text-align: center;

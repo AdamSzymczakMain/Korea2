@@ -1,45 +1,4 @@
-$color-primary: #e6735b;
-$color-secondary: #003478;
-$color-tertiary: #000000;
-$color-primary-darker: #cc5c4b;
-$color-secondary-darker: #00265b;
-$color-tertiary-darker: #333333;
-$color-primary-opacity: rgba($color-primary, 0.3);
-$color-secondary-opacity: rgba($color-secondary, 0.3);
-$color-tertiary-opacity: rgba($color-tertiary, 0.3);
-$gradient-primary: linear-gradient(
-  to top left,
-  $color-primary,
-  $color-secondary
-);
-$gradient-secondary: linear-gradient(
-  to top left,
-  $color-primary-darker,
-  $color-secondary-darker
-);
-
-$font-size-base: 1.5em;
-$font-size-large: 2em;
-$font-size-xlarge: 2.3em;
-$font-size-xxlarge: 3em;
-$gap-base: 0.5em;
-$gap-large: 2em;
-$margin-base: 1.25rem;
-$padding-base: 0.5em;
-
-%text-link {
-  text-decoration: none;
-  color: $color-tertiary;
-  font-weight: 600;
-  font-size: $font-size-base;
-
-  &:hover {
-    background-color: $color-primary-darker;
-  }
-}
-
-$background-image: url(../image/Korea.img1.png);
-$background-gradient: $gradient-primary, $background-image;
+@import "variables";
 
 .header {
   display: flex;
