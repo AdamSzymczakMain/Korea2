@@ -8,6 +8,16 @@
   background-color: #cc5c4b;
 }
 
+.main-nav-lists .main-nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.main-nav-lists .main-nav-link:hover {
+  background-color: #cc5c4b;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

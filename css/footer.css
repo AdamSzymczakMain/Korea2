@@ -5,6 +5,13 @@ footer .icon-flex .icon-footer, footer .social-p, footer .footer__link {
   font-size: 1.5em;
 }
 
+footer .icon-flex .icon-footer, footer .social-p, footer .footer__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
 footer {
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
@@ -14,7 +21,7 @@ footer {
   gap: 0.5em;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top left, #e6735b, #003478), url(../image/Korea.img1.png), url(../image/Korea.img1.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../image/Korea.img1.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;

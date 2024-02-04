@@ -77,7 +77,7 @@ $image-trip-width-medium: 350px;
 
 @include media-query(768px) {
   .header-main-text {
-    font-size: $font-size-x-large;
+    font-size: $font-size-xx-large;
   }
   .p-header-main {
     font-size: 1.9em;
@@ -121,7 +121,7 @@ $image-trip-width-medium: 350px;
     font-size: $font-size-xxxx-large;
   }
   .trip-main {
-    width: $trip-main-width-large;
+    width: $trip-main-width-xxx-large;
   }
 }
 
@@ -130,7 +130,7 @@ $image-trip-width-medium: 350px;
     width: $main-width;
   }
   .trip-main {
-    width: $trip-main-width-large;
+    width: $trip-main-width-xxx-large;
   }
 }
 

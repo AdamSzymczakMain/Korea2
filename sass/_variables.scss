@@ -19,20 +19,53 @@ $gradient-secondary: linear-gradient(
   $color-primary-darker,
   $color-secondary-darker
 );
+
+$color-text: #000;
+$border-color: #414141;
+
+// image
+
+$background-image: url(../image/Korea.img1.png);
+$background-gradient: $gradient-primary, $background-image;
 $background-gradient: linear-gradient(
   rgba(255, 255, 255, 0.7),
   rgba(255, 255, 255, 0.7)
 );
 
+// fonts
+
 $font-size-base: 1.5em;
 $font-size-large: 2em;
+$font-size-base: 1.5em;
+$font-size-large: 2em;
+$font-size-xlarge: 2.3em;
+$font-size-xxlarge: 3em;
+$font-size-xx-large: 4em;
+$font-size-xxx-large: 5em;
+$font-size-xxxx-large: 6em;
+
+// padding & margin
+
 $gap-base: 0.5em;
 $gap-large: 2em;
-$margin-base: 1.25rem;
-$padding-base: 0.5em;
-$color-text: #000;
 
-$background-image: url(../image/Korea.img1.png);
+$margin-base: 1.25rem;
+$margin-auto: auto;
+
+$padding-base: 0.5em;
+
+$main-width: 1500px;
+$trip-main-width-large: 80%;
+
+//
+
+$image-trip-width-small: 300px;
+$image-trip-width-medium: 350px;
+$trip-main-width-medium: 450px;
+$trip-main-width-large: 650px;
+$trip-main-width-x-large: 800px;
+$trip-main-width-xx-large: 1000px;
+$trip-main-width-xxx-large: 1200px;
 
 %text-base {
   text-decoration: none;
@@ -40,15 +73,6 @@ $background-image: url(../image/Korea.img1.png);
   font-weight: 600;
   font-size: $font-size-base;
 }
-
-$font-size-base: 1.5em;
-$font-size-large: 2em;
-$font-size-xlarge: 2.3em;
-$font-size-xxlarge: 3em;
-$gap-base: 0.5em;
-$gap-large: 2em;
-$margin-base: 1.25rem;
-$padding-base: 0.5em;
 
 %text-link {
   text-decoration: none;
@@ -61,23 +85,20 @@ $padding-base: 0.5em;
   }
 }
 
-$background-image: url(../image/Korea.img1.png);
-$background-gradient: $gradient-primary, $background-image;
+%text-base {
+  text-decoration: none;
+  color: $color-text;
+  font-weight: 600;
+  font-size: $font-size-base;
+}
 
-$border-color: #414141;
-$main-width: 1500px;
-$trip-main-width-large: 80%;
-$font-size-base: 1.2em; // Bazowa wielkość fontu
-$font-size-large: 2em;
-$font-size-x-large: 3em;
-$font-size-xx-large: 4em;
-$font-size-xxx-large: 5em;
-$font-size-xxxx-large: 6em;
-$margin-auto: auto;
-$image-trip-width-small: 300px;
-$image-trip-width-medium: 350px;
-$trip-main-width-medium: 450px;
-$trip-main-width-large: 650px;
-$trip-main-width-x-large: 800px;
-$trip-main-width-xx-large: 1000px;
-$trip-main-width-xxx-large: 1200px;
+%text-link {
+  text-decoration: none;
+  color: $color-tertiary;
+  font-weight: 600;
+  font-size: $font-size-base;
+
+  &:hover {
+    background-color: $color-primary-darker;
+  }
+}
