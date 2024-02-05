@@ -14,23 +14,74 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include media-query($breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  @include media-query($breakpoint-laptop) {
+    width: $width-xx-large;
+    margin: auto;
+  }
+
+  @include media-query($breakpoint-large-laptop) {
+    width: $width-xxxx-large;
+    margin: auto;
+  }
+
+  //footer menu
+
   .footer-menu {
     order: 0;
     text-align: center;
+    @include media-query($breakpoint-tablet) {
+      order: 1;
+    }
+    @include media-query($breakpoint-laptop) {
+      font-size: $font-size-base;
+    }
+    @include media-query($breakpoint-large-laptop) {
+      font-size: $font-size-large;
+    }
   }
 
   .footer__link {
     @extend %text-base;
   }
 
+  //copyright
+
   .copyright {
     order: 2;
     text-align: center;
+
+    @include media-query($breakpoint-tablet) {
+      order: 0;
+    }
+    @include media-query($breakpoint-laptop) {
+      font-size: $font-size-base;
+    }
+    @include media-query($breakpoint-large-laptop) {
+      font-size: $font-size-large;
+    }
   }
+
+  //socialmedia
 
   .social-media {
     order: 1;
     text-align: center;
+
+    @include media-query($breakpoint-tablet) {
+      order: 2;
+    }
+    @include media-query($breakpoint-laptop) {
+      font-size: $font-size-base;
+    }
+    @include media-query($breakpoint-large-laptop) {
+      font-size: $font-size-large;
+    }
   }
 
   .social-p {
@@ -43,44 +94,6 @@ footer {
 
     .icon-footer {
       @extend %text-base;
-    }
-  }
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-
-    .copyright {
-      order: 0;
-    }
-
-    .social-media {
-      order: 2;
-    }
-
-    .footer-menu {
-      order: 1;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .copyright,
-    .footer-menu,
-    .social-media {
-      font-size: $font-size-large;
-    }
-    width: $width-xxx-large;
-  }
-
-  @media (min-width: 1440px) {
-    width: $width-xxxx-large;
-    margin: auto;
-
-    .copyright,
-    .footer-menu,
-    .social-media {
-      font-size: 1.9em;
     }
   }
 }
