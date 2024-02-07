@@ -49,7 +49,6 @@ h1 {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
-    grid-row: 2fr;
     font-size: 2em;
     background-color: #ffffff96;
 
@@ -85,7 +84,6 @@ h1 {
       grid-row: 1;
     }
   }
-
   .icon {
     grid-column: 1;
     grid-row: 2;

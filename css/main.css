@@ -1,6 +1,6 @@
 .header-main {
   text-align: center;
-  width: 1500px;
+  width: 320px;
   margin: auto;
 }
 @media (min-width: 2000px) {
@@ -80,6 +80,19 @@
     height: 300px;
   }
 }
+.trip:not(:last-child):after {
+  border: 1px solid #414141;
+  width: 50%;
+  display: block;
+  margin: 1.75rem auto;
+  content: "";
+}
+@media (min-width: 650px) {
+  .trip:not(:last-child)::after {
+    border: none;
+    content: none;
+  }
+}
 .trip-content {
   font-size: 1.5em;
   margin: 0.2rem 0.7rem 0.5rem;
@@ -88,13 +101,6 @@
   .trip-content {
     flex: 1;
   }
-}
-
-.border {
-  border: 1px solid #414141;
-  width: 50%;
-  display: block;
-  margin: 0.5rem auto;
 }
 
 @media (min-width: 650px) {
