@@ -7,12 +7,46 @@
   max-width: 1200px;
   padding: 0.3rem;
   position: relative;
+
+  @include media-query($breakpoint-laptop) {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  @include media-query($breakpoint-large-laptop) {
+    max-width: 1200px;
+  }
+
+  @include media-query($breakpoint-4k) {
+    max-width: 80%;
+  }
 }
 
 .img-logo {
   width: 150px;
   height: auto;
   margin-left: 0.8rem;
+
+  @include media-query($breakpoint-small-mobile) {
+    width: 200px;
+
+    margin-left: 1.2rem;
+  }
+
+  @include media-query($breakpoint-large-mobile) {
+    width: 250px;
+  }
+
+  @include media-query($breakpoint-laptop) {
+    width: 300px;
+  }
+  @include media-query($breakpoint-laptop) {
+    width: 350px;
+  }
+
+  @include media-query($breakpoint-4k) {
+    width: 400px;
+  }
 }
 
 .main-nav {
@@ -30,6 +64,17 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
+  @include media-query($breakpoint-laptop) {
+    position: static;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
 
   &.nav-open {
     opacity: 1;
@@ -63,8 +108,30 @@
   flex-direction: column;
   gap: $gap-large;
 
+  @include media-query($breakpoint-laptop) {
+    flex-direction: row;
+  }
+
   .main-nav-link {
     @extend %text-link;
+
+    @include media-query($breakpoint-small-mobile) {
+      display: flex;
+      font-size: $font-size-large;
+    }
+
+    @include media-query($breakpoint-large-mobile) {
+      font-size: $font-size-large;
+    }
+
+    @include media-query($breakpoint-laptop) {
+      font-size: $font-size-xlarge;
+      font-weight: 600;
+    }
+
+    @include media-query($breakpoint-large-laptop) {
+      font-size: $font-size-xxlarge;
+    }
   }
 }
 
@@ -73,100 +140,16 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
 
-@media (min-width: 320px) {
-  .img-logo {
-    width: 200px;
-    height: auto;
-    margin-left: 1.2rem;
-  }
-
-  .main-nav-link {
-    display: flex;
-    font-size: $font-size-large;
-  }
-
-  .btn-mobile-nav {
+  @include media-query($breakpoint-small-mobile) {
     font-size: $font-size-xlarge;
   }
-}
 
-@media (min-width: 425px) {
-  .img-logo {
-    width: 250px;
-    height: auto;
-    margin-left: 1.2rem;
-  }
-
-  .main-nav-link {
-    font-size: $font-size-large;
-  }
-
-  .btn-mobile-nav {
+  @include media-query($breakpoint-large-mobile) {
     font-size: $font-size-xxlarge;
   }
-}
 
-@media (min-width: 960px) {
-  .btn-mobile-nav {
+  @include media-query($breakpoint-laptop) {
     display: none;
-  }
-
-  .main-nav {
-    position: static;
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-  }
-
-  .main-nav-lists {
-    flex-direction: row;
-  }
-
-  .main-nav-link {
-    font-size: $font-size-xlarge;
-    font-weight: 600;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  .img-logo {
-    width: 300px;
-    height: auto;
-  }
-
-  .main-nav-link {
-    font-size: $font-size-xxlarge;
-  }
-}
-
-@media (min-width: 1500px) {
-  .header {
-    max-width: 80%;
-  }
-}
-
-@media (min-width: 2000px) {
-  .header {
-    max-width: 70%;
-  }
-
-  .img-logo {
-    width: 400px;
-    height: auto;
-  }
-
-  .main-nav-link {
-    font-size: $font-size-xxlarge;
   }
 }
