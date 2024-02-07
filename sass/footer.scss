@@ -30,6 +30,10 @@ footer {
     margin: auto;
   }
 
+  @include media-query($breakpoint-4k) {
+    margin-top: $margin-large;
+  }
+
   //footer menu
 
   .footer-menu {

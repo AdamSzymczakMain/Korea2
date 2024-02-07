@@ -75,6 +75,11 @@
     object-fit: cover;
   }
 }
+@media (min-width: 1024px) {
+  .trip .image-trip {
+    height: 300px;
+  }
+}
 .trip-content {
   font-size: 1.5em;
   margin: 0.2rem 0.7rem 0.5rem;
@@ -112,7 +117,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 2em;
   }
 }
 @media (min-width: 1024px) and (min-width: 1440px) {

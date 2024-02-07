@@ -68,6 +68,9 @@
       flex: 1;
       object-fit: cover;
     }
+    @include media-query($breakpoint-laptop) {
+      height: 300px;
+    }
   }
 
   // content in section trip
@@ -96,8 +99,6 @@
 }
 
 @include media-query(900px) {
-  .header-main-text {
-  }
   .header-main {
     width: $width-x-large;
   }
@@ -112,7 +113,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: $gap-large;
 
     // @include media-query($breakpoint-laptop) {
     //   width: $width-xx-large;

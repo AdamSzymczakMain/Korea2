@@ -45,6 +45,11 @@ footer {
     margin: auto;
   }
 }
+@media (min-width: 2000px) {
+  footer {
+    margin-top: 1.75rem;
+  }
+}
 footer .footer-menu {
   order: 0;
   text-align: center;
