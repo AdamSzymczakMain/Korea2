@@ -114,9 +114,9 @@
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 
-    @include media-query($breakpoint-laptop) {
-      width: $width-xxx-large;
-    }
+    // @include media-query($breakpoint-laptop) {
+    //   width: $width-xx-large;
+    // }
 
     @include media-query($breakpoint-large-laptop) {
       width: $width-xxx-large;

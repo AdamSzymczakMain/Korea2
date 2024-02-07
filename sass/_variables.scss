@@ -26,6 +26,10 @@ $gradient-secondary: linear-gradient(
 );
 
 $color-text: #000;
+
+$color-text-lighten: lighten($color-text, 5%);
+$color-text-x-lighten: lighten($color-text, 10%);
+
 $border-color: #414141;
 
 // image

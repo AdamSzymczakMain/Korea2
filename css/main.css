@@ -115,11 +115,6 @@
     gap: 10px;
   }
 }
-@media (min-width: 1024px) and (min-width: 1024px) {
-  .trip-main {
-    width: 1200px;
-  }
-}
 @media (min-width: 1024px) and (min-width: 1440px) {
   .trip-main {
     width: 1200px;
