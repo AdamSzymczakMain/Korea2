@@ -102,6 +102,10 @@
     width: 650px;
     margin: auto;
   }
+  .image-DMZ,
+  .image-Palawan {
+    order: 1;
+  }
 }
 @media (min-width: 900px) {
   .header-main {
@@ -128,5 +132,13 @@
 @media (min-width: 1024px) and (min-width: 2000px) {
   .trip-main {
     width: 1400px;
+  }
+}
+@media (min-width: 1024px) {
+  .image-DMZ {
+    order: 0;
+  }
+  .image-kioto {
+    order: 1;
   }
 }

@@ -96,6 +96,11 @@
     width: $width-large;
     margin: $margin-auto;
   }
+
+  .image-DMZ,
+  .image-Palawan {
+    order: 1;
+  }
 }
 
 @include media-query(900px) {
@@ -115,10 +120,6 @@
     grid-template-rows: 1fr 1fr;
     gap: $gap-large;
 
-    // @include media-query($breakpoint-laptop) {
-    //   width: $width-xx-large;
-    // }
-
     @include media-query($breakpoint-large-laptop) {
       width: $width-xxx-large;
     }
@@ -126,5 +127,13 @@
     @include media-query($breakpoint-4k) {
       width: $width-xxxx-large;
     }
+  }
+
+  .image-DMZ {
+    order: 0;
+  }
+
+  .image-kioto {
+    order: 1;
   }
 }
