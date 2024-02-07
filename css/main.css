@@ -3,25 +3,86 @@
   width: 1500px;
   margin: auto;
 }
+@media (min-width: 2000px) {
+  .header-main {
+    width: 1500px;
+  }
+}
 .header-main-text {
   font-size: 2em;
   margin-bottom: 1.2rem;
+}
+@media (min-width: 768px) {
+  .header-main-text {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1024px) {
+  .header-main-text {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1440px) {
+  .header-main-text {
+    font-size: 6em;
+  }
 }
 .header-main .p-header-main {
   font-size: 1.5em;
   margin: 1em;
 }
+@media (min-width: 1024px) {
+  .header-main .p-header-main {
+    font-size: 1.9em;
+    margin-bottom: 0.8em;
+  }
+}
+@media (min-width: 425px) {
+  .header-main {
+    width: 450px;
+    margin: auto;
+  }
+}
 
 .trip {
   text-align: center;
+}
+@media (min-width: 650px) {
+  .trip {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }
 .trip .image-trip {
   width: 300px;
   margin: 0.3rem;
 }
+@media (min-width: 425px) {
+  .trip .image-trip {
+    width: 450px;
+    margin: auto;
+  }
+}
+@media (min-width: 375px) {
+  .trip .image-trip {
+    width: 350px;
+  }
+}
+@media (min-width: 650px) {
+  .trip .image-trip {
+    flex: 1;
+    object-fit: cover;
+  }
+}
 .trip-content {
   font-size: 1.5em;
   margin: 0.2rem 0.7rem 0.5rem;
+}
+@media (min-width: 650px) {
+  .trip-content {
+    flex: 1;
+  }
 }
 
 .border {
@@ -31,46 +92,13 @@
   margin: 0.5rem auto;
 }
 
-@media (min-width: 375px) {
-  .image-trip {
-    width: 350px;
-  }
-}
-@media (min-width: 425px) {
-  .header-main,
-  .trip-main {
-    width: 450px;
-    margin: auto;
-  }
-}
 @media (min-width: 650px) {
   .trip-main {
     width: 650px;
-  }
-  .trip {
-    display: flex;
-  }
-  .trip .image-trip {
-    flex: 1;
-    object-fit: cover;
-  }
-  .trip-content {
-    flex: 1;
-  }
-}
-@media (min-width: 768px) {
-  .header-main-text {
-    font-size: 4em;
-  }
-  .p-header-main {
-    font-size: 1.9em;
-    margin-bottom: 0.8em;
+    margin: auto;
   }
 }
 @media (min-width: 900px) {
-  .header-main-text {
-    font-size: 4em;
-  }
   .header-main {
     width: 800px;
   }
@@ -87,26 +115,17 @@
     gap: 10px;
   }
 }
-@media (min-width: 1200px) {
-  .header-main-text {
-    font-size: 5em;
-  }
+@media (min-width: 1024px) and (min-width: 1024px) {
   .trip-main {
     width: 1200px;
   }
 }
-@media (min-width: 1500px) {
-  .header-main-text {
-    font-size: 6em;
-  }
+@media (min-width: 1024px) and (min-width: 1440px) {
   .trip-main {
     width: 1200px;
   }
 }
-@media (min-width: 2000px) {
-  .header-main {
-    width: 1500px;
-  }
+@media (min-width: 1024px) and (min-width: 2000px) {
   .trip-main {
     width: 1400px;
   }

@@ -5,27 +5,79 @@
   width: $main-width;
   margin: $margin-auto;
 
+  @include media-query($breakpoint-4k) {
+    width: $main-width;
+  }
+
   &-text {
     font-size: $font-size-large;
     margin-bottom: 1.2rem;
+
+    @include media-query($breakpoint-tablet) {
+      font-size: $font-size-xx-large;
+    }
+
+    @include media-query($breakpoint-laptop) {
+      font-size: $font-size-xx-large;
+    }
+
+    @include media-query($breakpoint-large-laptop) {
+      font-size: $font-size-xxxx-large;
+    }
   }
 
   .p-header-main {
     font-size: 1.5em;
     margin: 1em;
+
+    @include media-query($breakpoint-laptop) {
+      font-size: 1.9em;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  @include media-query($breakpoint-large-mobile) {
+    width: $width-medium;
+    margin: $margin-auto;
   }
 }
 
 .trip {
   text-align: center;
+
+  @include media-query($breakpoint-mob-btw-tab) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  // image in section trip
   .image-trip {
     width: $image-trip-width-small;
     margin: 0.3rem;
+
+    @include media-query($breakpoint-large-mobile) {
+      width: $width-medium;
+      margin: $margin-auto;
+    }
+
+    @include media-query($breakpoint-medium-mobile) {
+      width: $image-trip-width-medium;
+    }
+    @include media-query($breakpoint-mob-btw-tab) {
+      flex: 1;
+      object-fit: cover;
+    }
   }
+
+  // content in section trip
 
   &-content {
     font-size: $font-size-base;
     margin: 0.2rem 0.7rem 0.5rem;
+    @include media-query($breakpoint-mob-btw-tab) {
+      flex: 1;
+    }
   }
 }
 
@@ -36,49 +88,15 @@
   margin: 0.5rem $margin-auto;
 }
 
-@include media-query(375px) {
-  .image-trip {
-    width: $image-trip-width-medium;
-  }
-}
-
-@include media-query(425px) {
-  .header-main,
-  .trip-main {
-    width: $width-medium;
-    margin: $margin-auto;
-  }
-}
-
 @include media-query(650px) {
   .trip-main {
     width: $width-large;
-  }
-  .trip {
-    display: flex;
-    .image-trip {
-      flex: 1;
-      object-fit: cover;
-    }
-    &-content {
-      flex: 1;
-    }
-  }
-}
-
-@include media-query(768px) {
-  .header-main-text {
-    font-size: $font-size-xx-large;
-  }
-  .p-header-main {
-    font-size: 1.9em;
-    margin-bottom: 0.8em;
+    margin: $margin-auto;
   }
 }
 
 @include media-query(900px) {
   .header-main-text {
-    font-size: $font-size-xx-large;
   }
   .header-main {
     width: $width-x-large;
@@ -95,39 +113,17 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-  }
-}
 
-@include media-query(1200px) {
-  .header-main-text {
-    font-size: $font-size-xxx-large;
-  }
-  .trip-main {
-    width: $width-xxx-large;
-  }
-}
+    @include media-query($breakpoint-laptop) {
+      width: $width-xxx-large;
+    }
 
-@include media-query(1500px) {
-  .header-main-text {
-    font-size: $font-size-xxxx-large;
-  }
-  .trip-main {
-    width: $width-xxx-large;
-  }
-}
+    @include media-query($breakpoint-large-laptop) {
+      width: $width-xxx-large;
+    }
 
-@include media-query(2000px) {
-  .header-main {
-    width: $main-width;
-  }
-  .trip-main {
-    width: $width-xxxx-large;
-  }
-}
-
-// Definicja mixin media-query dla ułatwienia zarządzania breakpointami
-@mixin media-query($size) {
-  @media (min-width: $size) {
-    @content;
+    @include media-query($breakpoint-4k) {
+      width: $width-xxxx-large;
+    }
   }
 }
