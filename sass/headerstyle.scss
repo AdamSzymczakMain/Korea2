@@ -14,7 +14,7 @@
   }
 
   @include media-query($breakpoint-large-laptop) {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 
   @include media-query($breakpoint-4k) {
@@ -39,9 +39,6 @@
 
   @include media-query($breakpoint-laptop) {
     width: 300px;
-  }
-  @include media-query($breakpoint-laptop) {
-    width: 350px;
   }
 
   @include media-query($breakpoint-4k) {
@@ -125,7 +122,6 @@
     }
 
     @include media-query($breakpoint-laptop) {
-      font-size: $font-size-xlarge;
       font-weight: 600;
     }
 

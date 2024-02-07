@@ -3,11 +3,6 @@ h1 {
   padding: 1em;
   font-size: 5.6em;
 }
-
-.section-search {
-  display: none;
-}
-
 @media (min-width: 375px) {
   h1 {
     font-size: 6em;
@@ -18,7 +13,7 @@ h1 {
     font-size: 6.4em;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   h1 {
     font-size: 7.2em;
   }
@@ -27,12 +22,38 @@ h1 {
   h1 {
     font-size: 9.1em;
   }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 11em;
+    padding: 0.8em;
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 12em;
+  }
+}
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 15em;
+    padding-top: 0.3em;
+  }
+}
+
+.section-search {
+  display: none;
+}
+@media (min-width: 1024px) {
   .section-search {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 3em;
   }
+}
+
+@media (min-width: 768px) {
   .box {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -43,6 +64,29 @@ h1 {
     width: 150px;
     height: 80px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .box {
+    width: 180px;
+    height: 85px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 1440px) {
+  .box {
+    width: 200px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) and (min-width: 2000px) {
+  .box {
+    margin-top: -0.3rem;
+    font-size: 2.3em;
+    font-weight: 600;
+    width: 210px;
+    height: 110px;
+  }
+}
+@media (min-width: 768px) {
   .box p {
     align-self: start;
     justify-self: start;
@@ -58,6 +102,23 @@ h1 {
     grid-row: 2;
     padding-left: 0.3em;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .icon {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .icon {
+    margin-top: 0.3rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 2000px) {
+  .icon {
+    margin-top: 0.7rem;
+  }
+}
+@media (min-width: 768px) {
   .box-button {
     display: flex;
     align-items: center;
@@ -95,55 +156,18 @@ h1 {
     background-color: transparent;
   }
 }
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 11em;
-    padding: 0.8em;
-  }
-  .box {
-    width: 180px;
-    height: 85px;
-  }
-  .icon {
-    font-size: 1em;
-  }
+@media (min-width: 768px) and (min-width: 1024px) {
   .dropdown-list {
     font-size: 1em;
   }
 }
-@media (min-width: 1600px) {
-  h1 {
-    font-size: 12em;
-  }
-  .box {
-    width: 200px;
-    height: 100px;
-  }
-  .icon {
-    margin-top: 0.3rem;
-  }
-}
 @media (min-width: 2000px) {
-  h1 {
-    font-size: 15em;
-    padding-top: 0.3em;
-  }
-  .box {
-    margin-top: -0.3rem;
-    font-size: 2.3em;
-    font-weight: 600;
-    width: 210px;
-    height: 110px;
-  }
   .date-list {
     margin-right: 0.5rem;
     margin-top: 0.3em;
   }
   .date-list-do {
     margin-top: 0.7em;
-  }
-  .icon {
-    margin-top: 0.7rem;
   }
   .icon-do {
     margin-top: 1rem;
